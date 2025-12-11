@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trinket Tracker</title>
+
+    <script src="app.js"></script>
+    <script src="logout.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Trinket Tracker</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="login.html" id="auth-link">Login</a></li>
+        </ul>
+    </nav>
+    <form id="addTrinketForm" style="display:none;">
+        <input type="text" id="trinketName" placeholder="Trinket Name" required>
+        <input type="text" id="trinketBrand" placeholder="Brand">
+        <input type="text" id="trinketColor" placeholder="Color">
+        <input type="text" id="trinketSeries" placeholder="Series">
+        <input type="text" id="trinketRelease" placeholder="Release">
+        <input type="text" id="trinketImageUrl" placeholder="Image URL">
+        <button type="submit">Add Trinket</button>
+    </form>
+    <section class="itemCards">
+        <div class="container">
+            <div class="item-grid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footercontent">
+            <p>Created by Elizabeth Castaneda -- @frogbeth on GitHub</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
